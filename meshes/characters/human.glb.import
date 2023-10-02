@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dw3pxvrpuap7e"
-path="res://.godot/imported/HumanMale_Character.fbx-41b98e97ca57c1be19f501870e3e0df9.scn"
+uid="uid://bku2m0h6t80po"
+path="res://.godot/imported/human.glb-97ce87af324c264c74307175bf1ce619.scn"
 
 [deps]
 
-source_file="res://meshes/characters/HumanMale_Character.fbx"
-dest_files=["res://.godot/imported/HumanMale_Character.fbx-41b98e97ca57c1be19f501870e3e0df9.scn"]
+source_file="res://meshes/characters/human.glb"
+dest_files=["res://.godot/imported/human.glb-97ce87af324c264c74307175bf1ce619.scn"]
 
 [params]
 
