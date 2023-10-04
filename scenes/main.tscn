@@ -1,14 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://b52okd8a4lupr"]
+[gd_scene load_steps=4 format=3 uid="uid://b52okd8a4lupr"]
 
-[ext_resource type="PackedScene" uid="uid://dg8e0rpowi1yo" path="res://prefabs/characters/human.tscn" id="1_jegdw"]
+[ext_resource type="PackedScene" uid="uid://ccgi6gfjmq8jj" path="res://prefabs/characters/player.tscn" id="1_npjfp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lkxo2"]
 size = Vector3(50, 2, 50)
 
 [sub_resource type="BoxMesh" id="BoxMesh_uwt44"]
 size = Vector3(50, 2, 50)
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xqpvu"]
 
 [node name="Main" type="Node3D"]
 
@@ -24,17 +22,4 @@ mesh = SubResource("BoxMesh_uwt44")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.0540444, -0.801005, 0.596214, -0.0872716, 0.59859, 0.796287, -0.994718, -0.00899764, -0.102255, 14.5901, 18.922, 0)
 
-[node name="Player" type="CharacterBody3D" parent="."]
-
-[node name="Pivot" type="Node3D" parent="Player"]
-
-[node name="Node3D" type="Node3D" parent="Player/Pivot"]
-
-[node name="human" parent="Player/Pivot/Node3D" instance=ExtResource("1_jegdw")]
-
-[node name="Camera3D" type="Camera3D" parent="Player/Pivot"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.521229, 1.68653, -0.790046)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0)
-shape = SubResource("CapsuleShape3D_xqpvu")
+[node name="Player" parent="." instance=ExtResource("1_npjfp")]
