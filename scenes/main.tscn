@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b52okd8a4lupr"]
 
-[ext_resource type="PackedScene" uid="uid://bku2m0h6t80po" path="res://meshes/characters/human.glb" id="1_3s606"]
+[ext_resource type="PackedScene" uid="uid://dg8e0rpowi1yo" path="res://prefabs/characters/human.tscn" id="1_jegdw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lkxo2"]
 size = Vector3(50, 2, 50)
@@ -30,10 +30,10 @@ transform = Transform3D(-0.0540444, -0.801005, 0.596214, -0.0872716, 0.59859, 0.
 
 [node name="Node3D" type="Node3D" parent="Player/Pivot"]
 
-[node name="human" parent="Player/Pivot/Node3D" instance=ExtResource("1_3s606")]
+[node name="human" parent="Player/Pivot/Node3D" instance=ExtResource("1_jegdw")]
 
 [node name="Camera3D" type="Camera3D" parent="Player/Pivot"]
-transform = Transform3D(-1, 0, -8.74228e-08, -2.37521e-08, 0.962384, 0.271692, 8.41343e-08, 0.271692, -0.962384, -0.14388, 2.10517, -1.47153)
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.521229, 1.68653, -0.790046)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0)
